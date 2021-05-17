@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Homework2021.DAO.Interface
 {
-    public interface IDAOGroupService
+    public interface IGroupRepository
     {
         Task<bool> CheckGroup(string groupname);
         Task<bool> CheckGrouphaveUser(int userid, int groupid);

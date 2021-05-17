@@ -1,7 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Homework2021.Content;
 using Homework2021.Logic;
+using Homework2021.Logic.Interface;
 using Homework2021.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Homework2021.Controllers
@@ -10,15 +12,16 @@ namespace Homework2021.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
-        private readonly MD_User UserIdentity;
+        private readonly IUserService UserIdentity;
         private readonly JwtHelpers jwt;
 
 
-        public LoginController(MD_User _UserIdentity, JwtHelpers _jwt)
+        public LoginController(IUserService _UserIdentity, JwtHelpers _jwt)
         {
             this.UserIdentity = _UserIdentity;
             this.jwt = _jwt;
         }
+        [AllowAnonymous]
         [HttpPost]
         public async Task<EF_Login> Login(EF_User user)
         {
@@ -38,6 +41,7 @@ namespace Homework2021.Controllers
                 result.UserName = userIdentity.UserName;
                 result.Password = userIdentity.Password;
                 var TokenStr = this.jwt.JwtGenerateToken(user);
+                result.TokenData = TokenStr;
                 result.Enable = true;
                 result.Message = "登入成功";
             }

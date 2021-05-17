@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "McW2KNr+6Y2Hzhf/2HzQSmA1joN2DvVZKBpn3NOPAmgy7iLmWREVyadEgOVCu5YDjVsMr6RJKLW8zlPw6GvlkQ==",
+  "dgSpecHash": "tAnQycKngqtrUnbgqfasDZC+U+eqfrix1w9KtwsQVqz4WygusWSpdrxzvQN0FLJZedJLVTAFcnr7MZWyOVx2+Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\rik guo\\Downloads\\Homework 1\\NUnitTestProject1\\NUnitTestProject1.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
-    "C:\\Users\\rik guo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.14\\microsoft.aspnetcore.authentication.jwtbearer.3.1.14.nupkg.sha512",
+    "C:\\Users\\rik guo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.15\\microsoft.aspnetcore.authentication.jwtbearer.3.1.15.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",

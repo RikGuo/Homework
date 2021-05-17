@@ -80,7 +80,7 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.14": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.15": {
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.5.0"
@@ -3614,10 +3614,10 @@
         "microsoft.aspnetcore.authentication.core.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.14": {
-      "sha512": "/HlfEeETtagEM+HuLr7VzXAd6MkxLVUbXRWDEvzMPe3cNXl8ZbuPv8oaiAd99sBhXlOKemeQVZooi8nOeekuFA==",
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.15": {
+      "sha512": "/xWvG7feK5lyuaKT+DTXad9X5prGIgAhmfXYtGIr9eElb42N8c63wblGUJXGk4n38opLjE8gMLf5jnfHOWbsIQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.14",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3625,7 +3625,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
         "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
-        "microsoft.aspnetcore.authentication.jwtbearer.3.1.14.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.3.1.15.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
@@ -10614,7 +10614,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "FluentFTP >= 34.0.0",
-      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.14",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.15",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.13",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.13",
@@ -10678,7 +10678,7 @@
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
-            "version": "[3.1.14, )"
+            "version": "[3.1.15, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
