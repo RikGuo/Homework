@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Homework2021.DAO.Interface
 {
-    public interface IDAOUserService
+    public interface IUserRepository
     {
         Task<EF_User> GetLogin(int id, bool enable);
         public IQueryable<EF_User> GetCustomerInfo(string search);        

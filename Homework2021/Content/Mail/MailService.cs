@@ -10,13 +10,13 @@ namespace Homework2021.Content.Mail
 {
     public class MailService : IMailService
     {
-        MailSettings _mailSettings = null;
-        public MailService(IOptions<MailSettings> mailSettings)
+        EF_MailSettings _mailSettings = null;
+        public MailService(IOptions<EF_MailSettings> mailSettings)
         {
             _mailSettings = mailSettings.Value;
         }
 
-        public bool SendEmailAsync(MailRequest mailRequest)
+        public bool SendEmailAsync(RS_MailRequest mailRequest)
         {
             try
             {

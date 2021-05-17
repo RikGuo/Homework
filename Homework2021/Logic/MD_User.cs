@@ -13,9 +13,9 @@ namespace Homework2021.Logic
 {
     public class MD_User:IUserService
     {
-        private readonly IDAOUserService Daouser;
+        private readonly IUserRepository Daouser;
         private const int pageSize = 10;
-        public MD_User(IDAOUserService daouser)
+        public MD_User(IUserRepository daouser)
         {
             this.Daouser = daouser;
         }

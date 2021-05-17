@@ -14,10 +14,10 @@ namespace Homework2021.Logic
 {
     public class MD_Group:IGroupService
     {
-        private readonly IDAOGroupService Daogroup;
+        private readonly IGroupRepository Daogroup;
         private const int pageSize = 10;
 
-        public MD_Group(IDAOGroupService daogroup)
+        public MD_Group(IGroupRepository daogroup)
         {
             this.Daogroup = daogroup;
         }

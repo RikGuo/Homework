@@ -7,6 +7,6 @@ namespace Homework2021.Content.Mail
 {
     public interface IMailService
     {
-        bool SendEmailAsync(MailRequest mailRequest);
+        bool SendEmailAsync(RS_MailRequest mailRequest);
     }
 }

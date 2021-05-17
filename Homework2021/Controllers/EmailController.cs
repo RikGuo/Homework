@@ -16,7 +16,7 @@ namespace Homework2021.Controllers
         }
 
         [HttpPost]
-        public bool SendEmailAsync(MailRequest emailData)
+        public bool SendEmailAsync(RS_MailRequest emailData)
         {
             return _emailService.SendEmailAsync(emailData);
         }

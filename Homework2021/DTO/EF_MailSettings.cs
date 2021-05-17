@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Homework2021.Content.Mail
 {
-    public class MailSettings
+    public class EF_MailSettings
     {
         public string? Mail { get; set; }
         public string? DisplayName { get; set; }

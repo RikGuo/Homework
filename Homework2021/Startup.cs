@@ -22,6 +22,7 @@ using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.IO;
 
 namespace Homework2021
 {
@@ -30,6 +31,10 @@ namespace Homework2021
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json");
+            Configuration = builder.Build();
         }
         //內建log在console下觀察使用，部屬時可註解
         public static readonly ILoggerFactory loggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(); });
@@ -78,14 +83,14 @@ namespace Homework2021
                  new RS_JobSchedule(jobType: typeof(DemoJob), cronExpression: "0/5 * * * * ?")
            );
             #endregion
-            services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
+            services.Configure<EF_MailSettings>(Configuration.GetSection("MailSettings"));
             services.AddTransient<IMailService, MailService>();
             services.AddSingleton<JwtHelpers>();     
             services.AddHostedService<MD_QuartzHostedService>();
             
-            services.AddScoped<IDAOUserService,Dao_UserManage>();
-            services.AddScoped<IDAOGroupService,Dao_GroupManage>();
-            services.AddScoped<IDAOCustomerService,Dao_Customer>();
+            services.AddScoped<IUserRepository,Dao_UserManage>();
+            services.AddScoped<IGroupRepository,Dao_GroupManage>();
+            services.AddScoped<ICustomerRepository,Dao_Customer>();
             services.AddScoped<IUserService, MD_User>();
             services.AddScoped<IGroupService,MD_Group>();            
             services.AddScoped<ICustomerService,MD_Customer>();

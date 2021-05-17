@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Homework2021.Content.Mail
 {
-    public class MailRequest
+    public class RS_MailRequest
     {
         public string ToEmail { get; set; }
         public string Subject { get; set; }

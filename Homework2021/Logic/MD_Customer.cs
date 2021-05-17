@@ -14,9 +14,9 @@ namespace Homework2021.Logic
 {
     public class MD_Customer:ICustomerService
     {
-        private readonly IDAOCustomerService Daocustomer;
+        private readonly ICustomerRepository Daocustomer;
         private const int pageSize = 10;
-        public MD_Customer(IDAOCustomerService daocustomer)
+        public MD_Customer(ICustomerRepository daocustomer)
         {
             this.Daocustomer = daocustomer;
         }          

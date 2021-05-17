@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Homework2021.DAO.Interface
 {
-    public interface IDAOCustomerService
+    public interface ICustomerRepository
     {
         string GetCustomerCount(int id);
         Task<bool> CheckCustomer(string customerName);

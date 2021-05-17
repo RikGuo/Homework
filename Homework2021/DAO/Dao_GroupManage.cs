@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Homework2021.DAO
 {
-    public class Dao_GroupManage:IDAOGroupService
+    public class Dao_GroupManage:IGroupRepository
     {
         private readonly UserWorkContext dbcontext;
         public Dao_GroupManage(UserWorkContext _dbcontext)

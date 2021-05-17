@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Homework2021.DAO
 {
-    public class Dao_Customer:IDAOCustomerService
+    public class Dao_Customer:ICustomerRepository
     {
         private readonly UserWorkContext dbcontext;
         public Dao_Customer(UserWorkContext _dbcontext)
